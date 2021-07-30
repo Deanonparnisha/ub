@@ -1280,4 +1280,9 @@ async def infohdk(client: Client, message: Message):
     await asyncio.sleep(0.5)
     await message.edit("<b>Люблю🥺❤️!</b>")
 
+
+@app.on_message(filters.command("love" , prefixes=".") & filters.me)
+async def infohdk(client: Client, message: Message):
+    await message.edit("┏━━━┓\n┃┏━━┛\n┃┗━━┓\n┃┏━━┛\n┃┃\n┗┛")
+
 app.run()
